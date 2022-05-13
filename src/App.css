@@ -1,3 +1,6 @@
+body {
+  color: black;
+}
 .App {
   text-align: center;
 }
@@ -38,14 +41,86 @@
 }
 ul, li {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.grid {
+.container {
   width: 80%;
   margin: 0 auto;
+}
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2%;
+  gap: 50px;
 }
 .img-box img {
   width: 100%;
+  border-radius: 50%;
+}
+.active {
+  color: red;
+}
+
+.item {
+  border: 1px solid lightblue;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.7);
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.bold {
+  font-weight: 700;
+}
+.button {
+  margin-top: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  width: 100px;
+  height: 36px;
+  background-color: #61dafb;
+  cursor: pointer;
+}
+
+.form-section {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form label {
+  margin-right: 10px;
+  font-size: 22px;
+  color: #212121;
+}
+.form input {
+  border-radius: 20px;
+  border: 1px solid lightblue;
+  height: 26px;
+  width: 200px;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 0.1);
+}
+.flex-row {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.flex-row div {
+  width: 46%;
+}
+.flex-row img {
+  width: 100%;
+}
+.cocktail-info {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
